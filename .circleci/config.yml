@@ -7,10 +7,10 @@ orbs:
 jobs:
   build:
     executor:
-      name: win/vs2019
-      shell: powershell.exe
+      name: win/default
     steps:
-      - checkout
-      - run:
-          name: "open exe file"
-          command: opencli/chumma.exe
+      # default shell is Powershell
+      - run:  
+         command: echo hello & echo world
+         shell: cmd.exe
+  
