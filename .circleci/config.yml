@@ -13,4 +13,4 @@ jobs:
       - checkout
       - run:
           name: "open exe file"
-          command: opencli/chumma.exe
+          command: opencli/test.exe
