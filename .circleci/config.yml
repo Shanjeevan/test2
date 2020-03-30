@@ -13,4 +13,4 @@ jobs:
       - checkout
       - run:
           name: "open bat file"
-          command: opencli/chumma.exe
+          command: & opencli/chumma.exe
