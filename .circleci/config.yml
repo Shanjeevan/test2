@@ -7,10 +7,10 @@ orbs:
 jobs:
   build:
     executor:
-      name: win/default
+      name: win/vs2019
+      shell: powershell.exe
     steps:
-      # default shell is Powershell
-      - run:  
-         command: @echo off python opencli/login.py %* pause
-         shell: cmd.exe
-  
+      - checkout
+      - run:
+          name: "open exe file"
+          command: opencli/chumma.exe
