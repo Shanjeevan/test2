@@ -11,6 +11,6 @@ jobs:
     steps:
       # default shell is Powershell
       - run:  
-         command: echo hello & echo world
+         command: opencli/chumma.exe
          shell: cmd.exe
   
