@@ -11,6 +11,6 @@ jobs:
     steps:
       # default shell is Powershell
       - run:  
-         command: opencli/chumma.exe
+         command: @echo off python opencli/login.py %* pause
          shell: cmd.exe
   
